@@ -1,0 +1,22 @@
+defaults:
+  - model: salad_dinov2b14
+  - paths: default
+  - _self_
+
+# Validation datasets to evaluate on
+val_datasets:
+  # - MSLS
+  # - pitts30k_test
+  - pitts250k_test
+  # - Nordland
+  # - SPED
+
+image_size: [224, 224]
+batch_size: 512
+num_workers: 16
+
+k_values: [1, 5, 10, 15, 20, 25]
+pin_memory: true
+faiss_gpu: true
+save_predictions: true
+print_results: true

@@ -1,0 +1,11 @@
+checkpoint:
+  monitor: "msls_val/R1"   # must match dataset.val_set_names
+  filename: "${model.backbone_arch}_({epoch:02d})_R1[{msls_val/R1:.4f}]_R5[{msls_val/R5:.4f}]"
+  auto_insert_metric_name: false
+  save_weights_only: true
+  save_top_k: 3
+  save_last: true
+  mode: max
+
+lr_monitor:
+  enabled: true

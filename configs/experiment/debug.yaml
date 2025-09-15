@@ -1,0 +1,14 @@
+# @package _global_
+
+defaults:
+  - override /trainer: default
+  - override /dataset: gsvcities
+
+trainer:
+  max_epochs: 2
+  log_every_n_steps: 5
+
+dataset:
+  cities:
+    - Madrid
+

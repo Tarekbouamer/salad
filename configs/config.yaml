@@ -1,0 +1,13 @@
+defaults:
+  - dataset: gsvcities
+  - model: salad_dinov2b14
+  - trainer: default
+  - callbacks: default
+  - logger: [csv, tensorboard] # or: - logger: default
+  - paths: default
+  - hydra: default
+  - experiment: debug
+  - _self_
+
+seed: 42
+experiment_name: ${dataset.name}_${model.name}

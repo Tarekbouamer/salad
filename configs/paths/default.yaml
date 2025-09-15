@@ -1,0 +1,16 @@
+# configs/paths.yaml
+
+# path to root directory
+root_dir: ${hydra:runtime.cwd}
+
+# path to working directory (same as root here)
+work_dir: ${hydra:runtime.cwd}
+
+# path to data directory (absolute)
+data_dir: ${hydra:runtime.cwd}/data
+
+# path to logging directory (absolute)
+log_dir: ${hydra:runtime.cwd}/logs
+
+# path to output directory, created dynamically by hydra (absolute)
+output_dir: ${hydra:runtime.output_dir}

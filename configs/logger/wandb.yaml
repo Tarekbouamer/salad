@@ -1,0 +1,14 @@
+_target_: pytorch_lightning.loggers.WandbLogger
+name: ${experiment_name}
+project: "crossmodal-ssl"
+save_dir: "${paths.output_dir}/wandb"
+mode: ${wandb_mode}
+id: null
+anonymous: null
+log_model: false
+prefix: ""
+entity: null
+group: ""
+job_type: "train"
+tags: []
+notes: ""

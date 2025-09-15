@@ -1,0 +1,11 @@
+name: gsvcities
+base_path: ${paths.data_dir}/GSVCities   # 👈 ensures absolute path
+batch_size: 60
+img_per_place: 4
+min_img_per_place: 4
+shuffle_all: false
+random_sample_from_each_place: true
+image_size: [224, 224]
+num_workers: 10
+show_data_stats: true
+val_set_names: [msls_val]

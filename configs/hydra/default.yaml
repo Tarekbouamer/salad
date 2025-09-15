@@ -1,0 +1,15 @@
+defaults:
+  - override hydra_logging: default
+  - override job_logging: stdout
+
+run:
+  dir: ${paths.log_dir}/${experiment_name}
+sweep:
+  dir: ${paths.log_dir}/${experiment_name}
+  subdir: ${hydra.job.num}
+
+job:
+  chdir: true
+  # config:
+  #   override_dirname:
+  #     exclude_keys: []
